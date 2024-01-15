@@ -1,3 +1,5 @@
+setInterval(updateClock, 1000);
+
 function updateClock() {
 	const now = new Date();
 	let hours = now.getHours();
@@ -9,4 +11,3 @@ function updateClock() {
 	const timeString = `${hours}:${minutes}:${seconds} ${meridiem}`;
 	document.getElementById('clock').textContent = timeString;
 }
-setInterval(updateClock, 1000);
